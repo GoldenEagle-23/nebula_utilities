@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nebula-utilities"
+version = "0.0.1"
+description = "Utilities for the Nebula ecosystem."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  { name = "Orion V1" }
+]
+license = {text = "MIT"}
+dependencies = []
+
+# SBOM mapping
+sbom-files = ["sbom.spdx.json"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["nebula_utilities"]
+
+[tool.setuptools.package-data]
+"nebula_utilities" = ["*.json", "*.spdx.json"]
+
+[project.urls]
+"Homepage" = "https://github.com/GoldenEagle-23/nebula_utilities"
+"Bug Tracker" = "https://github.com/GoldenEagle-23/nebula_utilities/issues"
